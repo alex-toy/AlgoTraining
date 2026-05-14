@@ -4,21 +4,16 @@ public class TwoSumAlgo
 {
     public int[] TwoSum(int[] nums, int target)
     {
-        Dictionary<int, int> indexByLack = new Dictionary<int, int>();
+        Dictionary<int, int> indexByValue = new Dictionary<int, int>();
 
         for(int i = 0; i < nums.Length; i++)
         {
-            if (indexByLack.TryGetValue(target - nums[i], out int index))
+            if (indexByValue.TryGetValue(target - nums[i], out int index))
             {
                 return [i, index];
             }
-            else
-            {
-                if (!indexByLack.TryGetValue(nums[i], out _))
-                {
-                    indexByLack.Add(nums[i], i);
-                }
-            }
+
+            indexByValue.TryAdd(nums[i], i);
         }
 
         return [];

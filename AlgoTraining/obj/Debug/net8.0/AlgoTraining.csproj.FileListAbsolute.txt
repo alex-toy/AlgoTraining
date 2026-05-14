@@ -1,0 +1,15 @@
+C:\source\AlgoTraining\AlgoTraining\bin\Debug\net8.0\AlgoTraining.exe
+C:\source\AlgoTraining\AlgoTraining\bin\Debug\net8.0\AlgoTraining.deps.json
+C:\source\AlgoTraining\AlgoTraining\bin\Debug\net8.0\AlgoTraining.runtimeconfig.json
+C:\source\AlgoTraining\AlgoTraining\bin\Debug\net8.0\AlgoTraining.dll
+C:\source\AlgoTraining\AlgoTraining\bin\Debug\net8.0\AlgoTraining.pdb
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.GeneratedMSBuildEditorConfig.editorconfig
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.AssemblyInfoInputs.cache
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.AssemblyInfo.cs
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.csproj.CoreCompileInputs.cache
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.sourcelink.json
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.dll
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\refint\AlgoTraining.dll
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.pdb
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\AlgoTraining.genruntimeconfig.cache
+C:\source\AlgoTraining\AlgoTraining\obj\Debug\net8.0\ref\AlgoTraining.dll

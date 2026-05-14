@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlgoTraining")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b86d45701d283e81f1b68ec0b4d925994d81cc13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b99c60e6f80a464a95cc4c8317b7eb6774580479")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlgoTraining")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlgoTraining")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

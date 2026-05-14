@@ -4,12 +4,19 @@
     {
         static void Main(string[] args)
         {
-            TwoSumAlgoTest();
+            ValidParenthesesAlgoTest();
+            //TwoSumAlgoTest();
+        }
+
+        private static void ValidParenthesesAlgoTest()
+        {
+            ValidParenthesesAlgo parenthesisAlgo = new();
+            parenthesisAlgo.TestAll();
         }
 
         private static void TwoSumAlgoTest()
         {
-            TwoSumAlgo twoSum = new ();
+            TwoSumAlgo twoSum = new();
             twoSum.TestAll();
         }
     }
