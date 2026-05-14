@@ -45,6 +45,7 @@ public class ValidParenthesesAlgo
         Test("{[]}", true);
         Test("(((", false);
         Test("((())]", false);
+        Test("[(())]", true);
     }
 
     private void Test(string input, bool isValid)

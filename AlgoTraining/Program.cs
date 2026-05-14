@@ -4,8 +4,15 @@
     {
         static void Main(string[] args)
         {
-            ValidParenthesesAlgoTest();
+            LongestSubstringWithoutRepeatingCharactersAlgoTest();
+            //ValidParenthesesAlgoTest();
             //TwoSumAlgoTest();
+        }
+
+        private static void LongestSubstringWithoutRepeatingCharactersAlgoTest()
+        {
+            LongestSubstringWithoutRepeatingCharactersAlgo longest = new();
+            longest.TestAll();
         }
 
         private static void ValidParenthesesAlgoTest()
