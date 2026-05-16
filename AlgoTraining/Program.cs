@@ -4,10 +4,17 @@
     {
         static void Main(string[] args)
         {
-            MergeIntervalsAlgoTest();
+            LongestStableSegmentAlgoTest();
+            //MergeIntervalsAlgoTest();
             //LongestSubstringWithoutRepeatingCharactersAlgoTest();
             //ValidParenthesesAlgoTest();
             //TwoSumAlgoTest();
+        }
+
+        private static void LongestStableSegmentAlgoTest()
+        {
+            LongestStableSegmentAlgo algo = new();
+            algo.TestAll();
         }
 
         private static void MergeIntervalsAlgoTest()

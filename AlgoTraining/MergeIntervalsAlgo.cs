@@ -22,17 +22,21 @@ public class MergeIntervalsAlgo
         }
 
         List<(int start, int end)> result = new();
-        int leftBound = 0;
+        int leftBoundIndex = 0;
+        int maxRightBound = intervalsList[leftBoundIndex].end;
 
-        while (leftBound < intervalsList.Count)
+        while (leftBoundIndex < intervalsList.Count)
         {
-            int rightBound = leftBound;
-            while (rightBound + 1 < intervalsList.Count && intervalsList[leftBound].end >= intervalsList[rightBound + 1].start)
+            int rightBoundIndex = leftBoundIndex;
+            while (rightBoundIndex + 1 < intervalsList.Count && maxRightBound >= intervalsList[rightBoundIndex + 1].start)
             {
-                rightBound++;
+                rightBoundIndex++;
+                maxRightBound = Math.Max(maxRightBound, intervalsList[rightBoundIndex].end);
             }
-            result.Add((intervalsList[leftBound].start, Math.Max(intervalsList[leftBound].end, intervalsList[rightBound].end)));
-            leftBound = rightBound + 1;
+            result.Add((intervalsList[leftBoundIndex].start, maxRightBound));
+
+            leftBoundIndex = rightBoundIndex + 1;
+            if (leftBoundIndex < intervalsList.Count) maxRightBound = intervalsList[leftBoundIndex].end;
         }
 
         return result.ToArray();
@@ -40,9 +44,12 @@ public class MergeIntervalsAlgo
 
     public void TestAll()
     {
+        Test([(1, 2), (2, 10), (9, 9)], [(1, 10)]);
+        Test([(-10, -5), (-4, 0), (-2, 1), (0, 2)], [(-10, -5), (-4, 2)]);
+        Test([(-10, -5), (-4, 0), (0, 2)], [(-10, -5), (-4, 2)]);
+        Test([(1, 7), (5, 10), (8, 12)], [(1, 12)]);
         Test([(1, 10), (2, 3), (4, 8)], [(1, 10)]);
         Test([(8, 10), (1, 3), (2, 6)], [(1, 6), (8, 10)]);
-        Test([(-10, -5), (-4, 0), (0, 2)], [(-10, -5), (-4, 2)]);
         Test([(5, 7), (1, 2), (3, 6)], [(1, 2), (3, 7)]);
         Test([(4, 8), (2, 3), (1, 10)], [(1, 10)]);
         Test([(1, 10), (4, 8)], [(1, 10)]);

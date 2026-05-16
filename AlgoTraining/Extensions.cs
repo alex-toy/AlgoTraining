@@ -1,4 +1,6 @@
-﻿namespace AlgoTraining;
+﻿using System.Collections.Generic;
+
+namespace AlgoTraining;
 
 public static class Extensions
 {
