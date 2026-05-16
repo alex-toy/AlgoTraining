@@ -4,27 +4,34 @@
     {
         static void Main(string[] args)
         {
-            LongestSubstringWithoutRepeatingCharactersAlgoTest();
+            MergeIntervalsAlgoTest();
+            //LongestSubstringWithoutRepeatingCharactersAlgoTest();
             //ValidParenthesesAlgoTest();
             //TwoSumAlgoTest();
         }
 
+        private static void MergeIntervalsAlgoTest()
+        {
+            MergeIntervalsAlgo algo = new();
+            algo.TestAll();
+        }
+
         private static void LongestSubstringWithoutRepeatingCharactersAlgoTest()
         {
-            LongestSubstringWithoutRepeatingCharactersAlgo longest = new();
-            longest.TestAll();
+            LongestSubstringWithoutRepeatingCharactersAlgo algo = new();
+            algo.TestAll();
         }
 
         private static void ValidParenthesesAlgoTest()
         {
-            ValidParenthesesAlgo parenthesisAlgo = new();
-            parenthesisAlgo.TestAll();
+            ValidParenthesesAlgo algo = new();
+            algo.TestAll();
         }
 
         private static void TwoSumAlgoTest()
         {
-            TwoSumAlgo twoSum = new();
-            twoSum.TestAll();
+            TwoSumAlgo algo = new();
+            algo.TestAll();
         }
     }
 }
