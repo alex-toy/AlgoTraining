@@ -4,11 +4,25 @@
     {
         static void Main(string[] args)
         {
-            LongestStableSegmentAlgoTest();
+            LongestIncreasingSegmentAlgoTest();
+            //FirstUniqueCharAlgoTest();
+            //LongestStableSegmentAlgoTest();
             //MergeIntervalsAlgoTest();
             //LongestSubstringWithoutRepeatingCharactersAlgoTest();
             //ValidParenthesesAlgoTest();
             //TwoSumAlgoTest();
+        }
+
+        private static void LongestIncreasingSegmentAlgoTest()
+        {
+            LongestIncreasingSegmentAlgo algo = new();
+            algo.TestAll();
+        }
+
+        private static void FirstUniqueCharAlgoTest()
+        {
+            FirstUniqueCharAlgo algo = new();
+            algo.TestAll();
         }
 
         private static void LongestStableSegmentAlgoTest()
